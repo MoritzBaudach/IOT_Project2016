@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SmartHome.jnlp">
+  <information>
+    <title>SmartHome</title>
+    <vendor>krischke</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SmartHome.jar" size="36355" download="eager" />
+    <jar href="lib/jxl.jar" size="725735" download="eager" />
+    <jar href="lib/ngdbc.jar" size="882014" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SmartHome" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="UserInterface.DashboardWindow.DashboardWindow"  name="SmartHome" />
+  <update check="always"/>
+</jnlp>

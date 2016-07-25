@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+                  <MenuBar fx:id="menu" layoutX="-1.0" layoutY="1.0" prefHeight="30.0" prefWidth="1120.0" />
+                  <SplitPane layoutY="31.0" prefHeight="669.0" prefWidth="1120.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox fx:id="dashboard_algorithms" layoutX="7.0" layoutY="6.0" prefHeight="170.0" prefWidth="234.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="234.0" text="Options">
+                           <font>
+                              <Font name="Agency FB Bold" size="32.0" />
+                           </font>
+                        </Label>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <StackPane fx:id="pane_graph" layoutY="36.0" prefHeight="554.0" prefWidth="875.0" />
+                                          <Button fx:id="btn_generate_graph" layoutX="34.0" layoutY="627.0" mnemonicParsing="false" text="Generate Graph" />
+                              <Label layoutX="484.0" layoutY="630.0" text="Event counter:">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="selected_profile_label" layoutX="581.0" layoutY="630.0" text="No events counted">
+                                 <font>
+                                    <Font name="Agency FB" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="exec_time_label" layoutX="363.0" layoutY="631.0" />
+                              <Label layoutX="317.0" layoutY="-7.0" text="Graph Presentation">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="35.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="484.0" layoutY="610.0" text="Selected Option">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="computed_algorithm_label" layoutX="598.0" layoutY="611.0" text="No option selected">
+                                 <font>
+                                    <Font name="Agency FB" size="15.0" />
+                                 </font>
+                              </Label>
+                                       </children>
+                                    </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="dashboard_params" layoutY="183.0" prefHeight="485.0" prefWidth="245.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="245.0" text="Households">
+                           <font>
+                              <Font name="Agency FB Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="param_box" prefHeight="407.0" prefWidth="245.0" />
+                        <Button fx:id="determine_params_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Edit" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="65.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+   </children>
+</AnchorPane>

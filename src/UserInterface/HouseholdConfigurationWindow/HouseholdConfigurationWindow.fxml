@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Household Configuration">
+                    <font>
+                        <Font name="Agency FB Bold" size="27.0" />
+                    </font>
+                </Label>
+                <AnchorPane prefHeight="328.0" prefWidth="600.0">
+                    <children>
+                        <HBox alignment="TOP_CENTER" layoutX="3.0" layoutY="4.0" prefHeight="320.0" prefWidth="800.0">
+                            <children>
+                                <VBox layoutX="3.0" layoutY="4.0" prefHeight="320.0" prefWidth="400.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="400.0">
+                                            <children>
+                                                <Label text="Name of Household">
+                                                    <font>
+                                                        <Font name="Agency FB Bold" size="15.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets right="20.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="connection_alias_name_textfield" />
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="400.0">
+                                            <children>
+                                                <Label text="ID">
+                                                    <font>
+                                                        <Font name="Agency FB Bold" size="15.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets right="30.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="connection_sever_port_textfield" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="400.0">
+                                            <children>
+                                                <Label text="AllowsControlling">
+                                                    <font>
+                                                        <Font name="Agency FB Bold" size="15.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets right="30.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <ComboBox fx:id="connection_provider_combobox" prefWidth="150.0" />
+                                            </children>
+                                        </HBox>
+                              <AnchorPane prefHeight="42.0" prefWidth="400.0">
+                                 <children>
+                                    <Button fx:id="save_connection_profile_button" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" text="Save" />
+                                    <Button fx:id="delete_connection_profile_button" layoutX="175.0" layoutY="9.0" mnemonicParsing="false" text="Delete" />
+                                    <Button fx:id="select_connection_profile_button" layoutX="332.0" layoutY="9.0" mnemonicParsing="false" text="Select" />
+                                 </children>
+                             </AnchorPane>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="320.0" prefWidth="400.0">
+                                    <children>
+                                        <Label alignment="TOP_CENTER" prefWidth="400" text="Existing Households">  
+                                            <font>
+                                                <Font name="Agency FB Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <ListView fx:id="existing_profiles_list" prefHeight="300" prefWidth="400" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="29.0" prefWidth="600.0">
+                    <children>
+                        <Button fx:id="database_connection_cancel_button" layoutX="348.0" layoutY="3.0" mnemonicParsing="false" text="Close Window" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
