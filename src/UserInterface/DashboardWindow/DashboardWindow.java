@@ -65,7 +65,7 @@ public class DashboardWindow extends Application {
         mDevicesList.setItems(optionsList);
 
         //VBox to embed fields for the params needed by the algorithms
-        mOptionsVBox = (VBox) scene.lookup("#dashboard_algorithms");
+        mOptionsVBox = (VBox) scene.lookup("#dashboard_options");
         mOptionsVBox.getChildren().addAll(mDevicesList);
 
         mParamVBox = (VBox) scene.lookup("#param_box");
